@@ -1,0 +1,113 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font: normal 300 1.8rem/1.5;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.4rem;
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+
+  @media (max-width: $iphone-6-plus-min-width) {
+    font-size: 1.2rem;
+  }
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0 0 1rem 0;
+}
+
+ul li {
+  color: #000;
+  font-weight: 200;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+  line-height: 1;
+  color: $transparent-black;
+  font-family: "Gentium Book Basic", serif;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+b, strong {
+  font-weight: 400;
+}
+
+p {
+  color: $transparent-black;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer !important;
+}
+
+*:focus {
+  outline: none;
+}
+
+
+button {
+ border: none;
+  color: #fff;
+}
+
+input[type="text"],
+select {
+  font-family: $main-font;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Flexbox helpers */
+
+.flex {
+  display: flex;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--column-centered {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+
+
