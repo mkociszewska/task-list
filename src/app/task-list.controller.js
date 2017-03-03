@@ -9,7 +9,7 @@ angular
 
 function TaskListController() {
 
-    var vm = this;
+    const vm = this;
 
     Object.assign(vm, {
         addTask : addTask,
